@@ -21,7 +21,7 @@
 
 
 
-function Square (width, height, color, classname, left, top){
+function Square (width, height, color, classname){
 	this.width = width;
 	this.height = height;
 	this.background = color;
@@ -41,15 +41,19 @@ function Square (width, height, color, classname, left, top){
 }
 
 
-s1 = new Square("200px", "50px", "grey", "square", "1px", "2px");
-
 // Task 1
-s1.changeColor("blue")
+
 // Task 2
-s2 = new Square("200px", "50px", "orange", "square", "100px", "200px");
+
+// Task 3
+	this.putSentence = function(text){
+		sq.innerHTML = text;
+	}
+s1 = new Square("200px", "50px", "grey", "square")
+s1.changeColor("blue");
+s2 = new Square("200px", "100px", "orange", "square")
 s1.putSentence("hello");
 s2.putSentence("hi");
-
 </script>
 
 </body>
